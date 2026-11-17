@@ -22,6 +22,9 @@ export const metadata: Metadata = {
     "labor compliance 2026",
   ],
   authors: [{ name: "National Wage Accreditation & Labor Compliance Archive" }],
+  other: {
+    "google-adsense-account": "ca-pub-1165320002460420",
+  },
 };
 
 export default function RootLayout({
@@ -31,6 +34,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark">
+      <head>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1165320002460420"
+          crossOrigin="anonymous"
+        />
+      </head>
       <body className="min-h-screen bg-slate-950 text-slate-100 antialiased selection:bg-emerald-500 selection:text-white">
         {children}
       </body>
